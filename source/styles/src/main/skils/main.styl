@@ -1,0 +1,72 @@
+.skils-cont
+		height: 570px;
+		display: grid;
+		grid-template-rows: 100%;
+		grid-template-columns: repeat(2,50%);
+		
+.skils
+	color: black;
+	position: relative;
+
+	&-background
+		height: 570px;
+		display: grid;
+		grid-template-rows: 100%;
+		grid-template-columns: repeat(2,50%);
+		position: absolute;
+		width: 100%;	
+
+
+
+		&__left
+			background-color: skils_back;
+			padding-left: 230px;
+			z-index: 1;	
+		&__right
+			background-color: grey;
+			z-index: 1;
+	&-left
+		// padding-left: 230px;
+		z-index: 2;
+
+		
+		.skils-block
+			margin: 158px 0 0 0;
+			
+			
+			&__title
+				text-transform: capitalize;
+				font-size: 27px;
+				font-weight: 600;
+				letter-spacing: 1px;
+				
+			&__elem
+				margin-top: 35px;
+				font-size: 12px;
+				text-transform: uppercase;
+				width: 350px;
+				letter-spacing: 1px;
+			
+				.range
+					margin-top: 16px;
+					width: 100%;
+					height: 3px;
+					background-color: grey;
+					position: relative;
+					overflow: hidden;					
+					/*Дeлать через scale*/
+					
+					&:after
+						content: '';
+						display: block;
+						position: absolute;
+						background-color: turquoise;
+						width: 350px;
+						height: 3px;
+						left: -30px;
+						top:0;
+						right: 0;
+						bottom: 0;
+			
+	&-right
+		z-index: 2;
