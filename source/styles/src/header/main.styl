@@ -11,16 +11,24 @@
 		padding: 0;
 		color: black;
 		display: block;
-		width: 490px;
+		max-width: 490px;
 		margin-top: 162px;
 		margin-left: calc(100% - 504.5px);
-		font-stretch:expanded;
+		font-stretch: expanded;
+		
+		@media screen and  (max-width: 600px) 
+			width: 80%;
+			margin: 0 auto;
+			margin-top: 162px;
 		
 		&__title 
 			font-weight: 600;
 			font-size: 35px;
 			font-family: serif;
 			font-stretch: condensed;
+			
+			@media screen and  (max-width: 600px) 
+				font-size: 25px;
 			
 		&__text span
 			display: block;
@@ -33,6 +41,9 @@
 			font-family: Serif
 			font-stretch: condensed;
 			line-height: 24px;
+			
+			@media screen and  (max-width: 600px) 
+				font-size: 15px;
 		
 		&__btn
 			color: text_grey;
@@ -46,6 +57,15 @@
 			color: white;
 			font-size: serif;
 			text-transform: uppercase;
+			
+			@media screen and  (max-width: 800px) 
+				margin: 0 auto;
+				margin-top: 42px;
+				// margin-left: calc(490px/2 - 50%);
+					
+			@media screen and  (max-width: 600px) 
+				margin-left: calc(490px/2 - 50vh);
+				
 
  @import "header/main.styl";
  @import "nav/main.styl";

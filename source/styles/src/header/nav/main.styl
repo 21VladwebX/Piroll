@@ -1,15 +1,32 @@
 .nav
 	display: block;
 	margin-top: 43px; 
-	margin-left: 525px;
+	// margin-left: 525px;
+	margin-left: 44%;
 	
+
+	@media screen and  (max-width: 1280px) 
+		margin-left: 35%;
+
+	@media screen and  (max-width: 1060px) 
+		margin-left: 25%;
+	@media screen and  (max-width: 950px) 
+		margin-left: 15%;
+	@media screen and  (max-width: 850px) 
+		margin-left: 5%;
+
 	.ul-nav
 		list-style-type: none;
 		display: flex;
 		flex-directoion: row;
 		justify-content: space-between;
-		width: 615px;
+		// width: 615px;
+		width: 136%;
+		max-width: 615px;
 		
+		@media screen and  (max-width: 800px) 
+			width: 120%;
+			
 		.li-nav
 			// margin-left: 30px;
 			// width: 38px;
@@ -21,9 +38,13 @@
 			font-stretch:expanded;
 			letter-spacing: 1px;
 			font-weight: 700;
-
+			
+			@media screen and  (max-width: 800px) 
+				width: 120%;
 			a
 				color: black;
 				
 			a:hover
 				color: hover;
+				
+
